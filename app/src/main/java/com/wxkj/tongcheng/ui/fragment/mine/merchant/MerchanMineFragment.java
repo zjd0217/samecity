@@ -30,7 +30,6 @@ public class MerchanMineFragment extends HomeBaseFragment<MerchanMinePresenter> 
     @BindView(R.id.recyclerView)
     RecyclerView recyclerView;
     Unbinder unbinder;
-    Unbinder unbinder1;
     @BindView(R.id.ll_goods_manage)
     LinearLayout llGoodsManage;
     private Context mContext;
@@ -86,13 +85,6 @@ public class MerchanMineFragment extends HomeBaseFragment<MerchanMinePresenter> 
         return new MerchanMinePresenter();
     }
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // TODO: inflate a fragment view
-        View rootView = super.onCreateView(inflater, container, savedInstanceState);
-        unbinder1 = ButterKnife.bind(this, rootView);
-        return rootView;
-    }
 
     @Override
     public void onDestroyView() {
