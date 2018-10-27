@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <!--图片-->
+    <ImageView
+        android:id="@+id/item_group_commodity_pic"
+        android:layout_width="match_parent"
+        android:layout_height="177dp" />
+
+    <!--描述-->
+    <TextView
+        android:id="@+id/item_group_commodity_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:maxLines="2"
+        android:text="iphoneX全网4g 前后3000万像素，萌萌齐刘海手机5.8英寸IPHONE X"
+        android:textColor="@color/color333"
+        android:textSize="15sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_margin="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal">
+
+            <!--价格-->
+            <TextView
+                android:id="@+id/item_group_commodity_teambuy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:maxWidth="80dp"
+                android:text="¥6500"
+                android:textColor="@color/colorff5"
+                android:textSize="15sp" />
+
+            <!--单价和销量-->
+            <TextView
+                android:id="@+id/item_group_commodity_current"
+                android:layout_width="wrap_content"
+                android:layout_height="14dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:maxWidth="100dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:text="单买价8000  已拼300  "
+                android:textColor="@color/color999"
+                android:textSize="10sp" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="7dp"
+                android:src="@drawable/img_location" />
+
+            <!--距离-->
+
+            <TextView
+                android:id="@+id/item_group_commodity_distance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="2dp"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:maxWidth="50dp"
+                android:text="距您500m"
+                android:textColor="@color/color999"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+        <!--去抢购-->
+
+        <LinearLayout
+            android:id="@+id/item_group_commodity_buy"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/shape_rush_buy"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即抢购"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2dp"
+                android:src="@drawable/icon_next_collage" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+
+</LinearLayout>

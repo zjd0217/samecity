@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:background="@drawable/bg_coupon_1">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/item_shop_coupon_obtain"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingLeft="22.5dp">
+
+
+        <TextView
+            android:id="@+id/item_shop_coupon_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="¥10"
+            android:textColor="@color/colorfd7"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/item_shop_coupon_need"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center"
+            android:text="满100可用"
+            android:textColor="@color/colorfd7"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/item_shop_coupon_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="2017.12.05-2017.12.23"
+            android:textColor="@color/colorf9b"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/item_shop_coupon_obtain"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/bg_coupon"
+        android:gravity="center"
+        android:text="立即领取"
+        android:textColor="@color/white"
+        android:textSize="15sp" />
+
+
+</RelativeLayout>

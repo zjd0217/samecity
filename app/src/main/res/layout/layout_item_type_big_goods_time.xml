@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="49dp">
+    
+   <RelativeLayout
+       android:background="#DDDDDD"
+       android:layout_marginBottom="10dp"
+       android:layout_alignParentBottom="true"
+       android:layout_centerHorizontal="true"
+       android:layout_width="120dp"
+       android:layout_height="24dp">
+    <TextView
+        android:textColor="#fff"
+        android:text="2018-10-09 23：00"
+        android:textSize="10sp"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+   </RelativeLayout>
+</RelativeLayout>

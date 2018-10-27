@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="12.5dp"
+    android:paddingRight="12.5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="15dp">
+
+        <!--用户头像-->
+        <ImageView
+            android:id="@+id/item_all_evaluate_img"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <!--用户名字-->
+        <TextView
+            android:id="@+id/item_all_evaluate_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/item_all_evaluate_img"
+            android:text="哦扑克牌"
+            android:textColor="@color/color444"
+            android:textSize="15sp" />
+
+        <!--评论时间-->
+        <TextView
+            android:id="@+id/item_all_evaluate_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="2018.02.21"
+            android:textColor="@color/color999"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <!--评论内容-->
+    <TextView
+        android:id="@+id/item_all_evaluate_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="特别漂亮，没有色差，而且超值优惠，值得入手而且卖家态度极好"
+        android:textColor="@color/color666"
+        android:textSize="14sp" />
+
+
+    <com.lzy.ninegrid.NineGridView
+        android:id="@+id/item_all_evaluate_nine_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:ngv_gridSpacing="5dp"
+        app:ngv_mode="grid" />
+
+    <TextView
+        android:id="@+id/item_all_evaluate_goods_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_marginTop="10dp"
+        android:text="商品：星空空"
+        android:textColor="@color/color999"
+        android:textSize="12sp" />
+
+</LinearLayout>

@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_home_title_gradient"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/mViewStatusBar"
+            android:layout_width="match_parent"
+            android:layout_height="0dp" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="56dp">
+
+            <TextView
+                android:id="@+id/mTvCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:drawableEnd="@drawable/icon_triangle"
+                android:drawablePadding="4dp"
+                android:drawableRight="@drawable/icon_triangle"
+                android:gravity="center_vertical"
+                android:paddingEnd="7dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="7dp"
+                android:paddingStart="14dp"
+                android:text="鹿城区"
+                android:textColor="@color/white"
+                android:textSize="12sp" />
+
+            <ImageView
+                android:id="@+id/mIvMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingEnd="14dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="14dp"
+                android:paddingStart="7dp"
+                android:src="@drawable/news_white" />
+
+            <ImageView
+                android:id="@+id/mIvCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/mIvMessage"
+                android:layout_toStartOf="@+id/mIvMessage"
+                android:paddingEnd="7dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="7dp"
+                android:paddingStart="14dp"
+                android:src="@drawable/icon_scan" />
+
+
+            <TextView
+                android:id="@+id/mTvSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/mTvCity"
+                android:layout_toLeftOf="@+id/mIvCode"
+                android:layout_toRightOf="@+id/mTvCity"
+                android:layout_toStartOf="@+id/mIvCode"
+                android:background="@drawable/shape_home_title_search"
+                android:drawableLeft="@drawable/icon_search_white"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/icon_search_white"
+                android:gravity="center_vertical"
+                android:paddingBottom="8dp"
+                android:paddingEnd="12dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp"
+                android:paddingStart="12dp"
+                android:paddingTop="8dp"
+                android:singleLine="true"
+                android:text="拼团吃饭"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.SmartRefreshLayout
+            android:id="@+id/mSmartRefreshLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:srlAccentColor="#fff"
+            app:srlEnablePreviewInEditMode="false"
+            app:srlFixedHeaderViewId="@+id/profile"
+            app:srlPrimaryColor="#444">
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srlClassicsSpinnerStyle="FixedBehind" />
+
+
+            <android.support.v4.widget.NestedScrollView
+                android:id="@+id/mNestedScrollView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:overScrollMode="never"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="130dp">
+
+                        <com.youth.banner.Banner
+                            android:id="@+id/mBanner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <TextView
+                            android:id="@+id/mTvCollageTip"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="14dp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginRight="14dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/shape_home_collage_bg"
+                            android:drawablePadding="14dp"
+                            android:drawableRight="@drawable/icon_next_collage"
+                            android:paddingBottom="8dp"
+                            android:paddingEnd="14dp"
+                            android:paddingLeft="14dp"
+                            android:paddingRight="14dp"
+                            android:paddingStart="14dp"
+                            android:paddingTop="8dp"
+                            android:singleLine="true"
+                            android:text="D先生正在进行IphoneX拼团"
+                            android:textColor="@color/white"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+
+                    </FrameLayout>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/mRvClassify"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="10dp" />
+
+                    <LinearLayout
+                        android:id="@+id/mLayoutLocal"
+                        android:layout_width="match_parent"
+                        android:layout_height="70dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginBottom="14dp"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginStart="14dp"
+                            android:layout_marginTop="14dp"
+                            android:src="@drawable/icon_local_headlines" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginStart="14dp"
+                            android:background="@color/color_f2f2f2" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <ImageView
+                                android:id="@+id/mIvLocal"
+                                android:layout_width="62dp"
+                                android:layout_height="62dp"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="10dp"
+                                android:layout_marginRight="10dp" />
+
+                            <TextView
+                                android:id="@+id/mTvLocalMessage"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginEnd="14dp"
+                                android:layout_marginLeft="14dp"
+                                android:layout_marginRight="14dp"
+                                android:layout_marginStart="14dp"
+                                android:layout_toLeftOf="@+id/mIvLocal"
+                                android:layout_toStartOf="@+id/mIvLocal"
+                                android:ellipsize="end"
+                                android:lineSpacingExtra="6dp"
+                                android:maxLines="2"
+                                android:text="小狗阳光蜂蜜衣服，今日家庭关注冬天到了小狗们也冷了，换衣服了"
+                                android:textColor="@color/color333"
+                                android:textSize="12sp" />
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/colorf7" />
+
+                    <com.youth.banner.Banner
+                        android:id="@+id/mSecBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/colorf7" />
+
+                    <include layout="@layout/fragment_home_flash_sale_layout" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:background="@color/colorf7" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="45dp"
+                        android:layout_gravity="center"
+                        android:drawableEnd="@drawable/shape_home_time_line"
+                        android:drawableLeft="@drawable/shape_home_time_line"
+                        android:drawablePadding="16dp"
+                        android:drawableRight="@drawable/shape_home_time_line"
+                        android:drawableStart="@drawable/shape_home_time_line"
+                        android:gravity="center_vertical"
+                        android:text="秒拼单"
+                        android:textColor="@color/color333"
+                        android:textSize="14sp" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/mRvCollage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </android.support.v4.widget.NestedScrollView>
+
+            <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:srlClassicsSpinnerStyle="FixedBehind" />
+
+        </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+        <ImageView
+            android:id="@+id/mIvTop"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right|bottom|end"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/top" />
+    </FrameLayout>
+</LinearLayout>

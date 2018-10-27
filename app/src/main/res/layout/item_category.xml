@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="vertical"
+    android:paddingEnd="14dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingStart="14dp">
+
+    <TextView
+        android:id="@+id/mTvName"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:drawableEnd="@drawable/icon_next"
+        android:drawableRight="@drawable/icon_arrow_gray_right"
+        android:gravity="center_vertical"
+        android:paddingEnd="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingStart="2dp"
+        android:text="二手车"
+        android:textColor="@color/color666"
+        android:textSize="15dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/color_DEDEDE" />
+</LinearLayout>

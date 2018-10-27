@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">同城</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="describe_submit_success">提交成功 ！你可以\n在“我的-我的发布”中查看、下线或\n删除信息。</string>
+</resources>

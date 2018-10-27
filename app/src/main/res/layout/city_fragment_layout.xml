@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            app:elevation="0dp">
+
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                app:layout_scrollFlags="scroll">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="220dp">
+
+                        <com.youth.banner.Banner
+                            android:id="@+id/banner"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="44dp"
+                                android:layout_alignParentBottom="true"
+                                android:background="@drawable/background_gradient_black">
+
+                                <TextView
+                                    android:id="@+id/base_title_text"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerInParent="true"
+                                    android:text="同城"
+                                    android:textColor="@color/white"
+                                    android:textSize="24sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="16dp"
+                                    android:src="@drawable/news_white" />
+                            </RelativeLayout>
+
+                            <LinearLayout
+                                android:id="@+id/search_layout"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginRight="15dp"
+                                android:background="@drawable/search_bg"
+                                android:gravity="center_vertical"
+                                android:paddingLeft="10dp"
+                                android:paddingRight="10dp">
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:src="@drawable/search_gray" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="2dp"
+                                    android:background="@null"
+                                    android:gravity="center_vertical"
+                                    android:text="搜索同城"
+                                    android:textColor="@color/color999"
+                                    android:textSize="15sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+
+                    <android.support.v4.view.ViewPager
+                        android:id="@+id/type_vp"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:overScrollMode="never" />
+
+                    <com.move.widget.XIndicator
+                        android:id="@+id/indicator"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        app:count="2"
+                        app:index="1"
+                        app:indicatorColor="#f7f7f7"
+                        app:indicatorHeight="1.5dp"
+                        app:indicatorSpace="6dp"
+                        app:indicatorWidth="38dp"
+                        app:selectedIndicatorColor="#ff5000"
+                        app:selectedIndicatorHeight="1.5dp"
+                        app:selectedIndicatorWidth="38dp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@color/colorf7" />
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                app:layout_collapseMode="pin"
+                app:layout_scrollFlags="exitUntilCollapsed|enterAlways|enterAlwaysCollapsed">
+
+                <com.flyco.tablayout.SlidingTabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    app:tl_indicator_color="@color/colorff5"
+                    app:tl_indicator_style="TRIANGLE"
+                    app:tl_tab_space_equal="true"
+                    app:tl_textSelectColor="@color/colorff5"
+                    app:tl_textUnselectColor="@color/color999"
+                    app:tl_textsize="15sp" />
+            </LinearLayout>
+        </android.support.design.widget.AppBarLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

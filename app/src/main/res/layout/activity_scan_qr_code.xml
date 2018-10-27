@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <SurfaceView
+        android:id="@+id/mSurfaceView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/mLayoutTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/mIvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingEnd="14dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingStart="14dp"
+            android:paddingTop="14dp"
+            android:src="@drawable/icon_scan_back" />
+
+
+        <ImageView
+            android:id="@+id/mIvLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:paddingEnd="14dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="14dp"
+            android:paddingStart="7dp"
+            android:paddingTop="14dp"
+            android:src="@drawable/icon_scan_light" />
+
+
+        <ImageView
+            android:id="@+id/mIvPicture"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/mIvLight"
+            android:layout_toStartOf="@+id/mIvLight"
+            android:paddingEnd="7dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="7dp"
+            android:paddingStart="14dp"
+            android:paddingTop="14dp"
+            android:src="@drawable/icon_scan_picture" />
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/mTvTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mLayoutTitle"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/shape_home_collage_bg"
+        android:paddingBottom="8dp"
+        android:paddingEnd="50dp"
+        android:paddingLeft="50dp"
+        android:paddingRight="50dp"
+        android:paddingStart="50dp"
+        android:paddingTop="8dp"
+        android:singleLine="true"
+        android:text="将二维码放入框内"
+        android:textColor="@color/white"
+        android:textSize="14sp" />
+
+
+    <com.wxkj.tongcheng.zxing.view.ViewfinderView
+        android:id="@+id/mViewfinderView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

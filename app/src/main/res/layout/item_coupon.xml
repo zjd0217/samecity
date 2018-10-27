@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_coupon_1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_marginLeft="12.5dp"
+        android:layout_marginRight="12.5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/item_coupon_use"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingLeft="24dp">
+
+            <!--店铺头像和店铺名字-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical">
+
+                <ImageView
+                    android:id="@+id/item_coupon_img"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@mipmap/ic_launcher" />
+
+                <TextView
+                    android:id="@+id/item_coupon_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:maxLines="1"
+                    android:text="马克笔之家"
+                    android:textColor="@color/color222"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <!--描述-->
+            <TextView
+                android:id="@+id/item_coupon_describe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7.5dp"
+                android:text="满180可用"
+                android:textColor="#FFFD7837"
+                android:textSize="12sp" />
+
+
+            <!--时间-->
+            <TextView
+                android:id="@+id/item_coupon_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="2017.12.05-2017.12.23"
+                android:textColor="@color/colorf9b"
+                android:textSize="12sp" />
+
+        </LinearLayout>
+
+
+        <!--优惠券右边-->
+        <LinearLayout
+            android:id="@+id/item_coupon_use"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/bg_coupon"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/item_coupon_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:text="¥15"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="立即使用"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>

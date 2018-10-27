@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mLayoutSecParent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:visibility="gone">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:id="@+id/mLayoutSec1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingEnd="14dp"
+            android:paddingLeft="14dp"
+            android:paddingRight="14dp"
+            android:paddingStart="14dp"
+            android:paddingTop="10dp"
+            android:saveEnabled="false"
+            android:visibility="invisible">
+
+            <ImageView
+                android:id="@+id/mIvSecPic1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|end|bottom"
+                android:layout_marginBottom="14dp" />
+
+            <TextView
+                android:id="@+id/mTvSecTitle1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="限时抢购"
+                android:textColor="@color/color_FF2E43"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/mTvSecContent1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="点击进入查看更多"
+                android:textColor="@color/color999"
+                android:textSize="12sp" />
+        </FrameLayout>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="wrap_content"
+            android:background="@color/coloreee" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+
+            <FrameLayout
+                android:id="@+id/mLayoutSec2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingEnd="14dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingStart="14dp"
+                android:paddingTop="10dp"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/mIvSecPic2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|end|bottom"
+                    android:layout_marginBottom="14dp" />
+
+                <TextView
+                    android:id="@+id/mTvSecTitle2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="限时抢购"
+                    android:textColor="@color/color_3288FF"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mTvSecContent2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="点击进入查看更多"
+                    android:textColor="@color/color999"
+                    android:textSize="12sp" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/coloreee" />
+
+            <FrameLayout
+                android:id="@+id/mLayoutSec3"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:paddingEnd="14dp"
+                android:paddingLeft="14dp"
+                android:paddingRight="14dp"
+                android:paddingStart="14dp"
+                android:paddingTop="10dp"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/mIvSecPic3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right|end|bottom"
+                    android:layout_marginBottom="14dp" />
+
+                <TextView
+                    android:id="@+id/mTvSecTitle3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="限时抢购"
+                    android:textColor="@color/color_FF8C00"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/mTvSecContent3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:text="点击进入查看更多"
+                    android:textColor="@color/color999"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/mSecRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>

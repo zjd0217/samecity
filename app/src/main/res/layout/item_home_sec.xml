@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:orientation="vertical"
+    android:paddingBottom="14dp"
+    android:paddingEnd="14dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingStart="14dp"
+    android:paddingTop="10dp">
+
+    <ImageView
+        android:id="@+id/mIvSecPic"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|end|bottom" />
+
+    <TextView
+        android:id="@+id/mTvSecTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="限时抢购"
+        android:textColor="@color/color_FF8C00"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/mTvSecContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="点击进入查看更多"
+        android:textColor="@color/color999"
+        android:textSize="12sp" />
+</FrameLayout>

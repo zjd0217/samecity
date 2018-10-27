@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#EF730F</color>
+    <color name="colorPrimaryDark">#EF730F</color>
+    <color name="colorAccent">#EF730F</color>
+
+    <color name="triangle">#aa72d572</color>
+    <color name="circle">#aa738ffe</color>
+    <color name="rect">#aae84e40</color>
+
+    <color name="white">#ffffff</color>
+    <color name="color666">#666666</color>
+    <color name="color999">#999999</color>
+    <color name="colorfc9">#fc9702</color>
+    <color name="colorff5">#ff5000</color>
+    <color name="color4d9">#4d96f3</color>
+    <color name="color333">#333333</color>
+    <color name="color00a">#00a9ff</color>
+    <color name="coloraaa">#aaaaaa</color>
+    <color name="colorccc">#cccccc</color>
+    <color name="colorf4">#f4f4f4</color>
+    <color name="colorf7">#f7f7f7</color>
+    <color name="color777">#777777</color>
+    <color name="colorddd">#dddddd</color>
+    <color name="color59">#595959</color>
+    <color name="color80">#808080</color>
+    <color name="color56">#565656</color>
+    <color name="color06">#060606</color>
+    <color name="color63">#636363</color>
+    <color name="colorf8">#f8f8f8</color>
+    <color name="colorf9">#f9f9f9</color>
+    <color name="colorf9b">#FF9B99A9</color>
+    <color name="coloreee">#eeeeee</color>
+    <color name="color222">#222222</color>
+    <color name="color888">#888888</color>
+    <color name="color444">#444444</color>
+    <color name="color9a">#9a9a9a</color>
+    <color name="color54">#545454</color>
+    <color name="colorf44">#FF444444</color>
+    <color name="colorfb105">#FFFFB105</color>
+    <color name="colorf66">#FF666666</color>
+    <color name="colorfca">#CACACA</color>
+    <color name="color555">#555555</color>
+    <color name="colorb1">#b1b1b1</color>
+    <color name="colorf500">#edd1c5</color>
+    <color name="color249">#249EF5</color>
+    <color name="colorff6">#FF6502</color>
+    <color name="colorff8">#FF8800</color>
+    <color name="colorca">#cacaca</color>
+    <color name="colorbbb">#bbbbbb</color>
+    <color name="color000">#000000</color>
+    <color name="colorf9c">#FF9C9C9C</color>
+    <color name="colorfd7">#FFFD7837</color>
+    <color name="color19f5">#19ff5000</color>
+    <color name="colorffa">#FFFAFAFA</color>
+
+    <color name="color_ff9101">#FF9101</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_f2f2f2">#F2F2F2</color>
+    <color name="color_e2e2e2">#E2E2E2</color>
+    <color name="color_translucent">#80000000</color>
+    <color name="color_transparent">#00000000</color>
+    <color name="color_ff8b56">#FF8B56</color>
+    <color name="color_644444">#644444</color>
+    <color name="color_2f2f2f">#2F2F2F</color>
+    <color name="color_454545">#454545</color>
+    <color name="color_FF2E43">#FF2E43</color>
+    <color name="color_3288FF">#3288FF</color>
+    <color name="color_FF8C00">#FF8C00</color>
+    <color name="color_A145FE">#A145FE</color>
+    <color name="color_DEDEDE">#DEDEDE</color>
+    <color name="color_FF0000">#FF0000</color>
+    <!--按下的点击事件的颜色-->
+    <color name="pressed_color">#e1e1e1</color>
+</resources>

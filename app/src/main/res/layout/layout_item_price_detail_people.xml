@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/iv_item_start"
+        android:layout_marginLeft="12dp"
+        android:background="#550000"
+        android:layout_width="45dp"
+        android:layout_height="45dp" />
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/iv_item_start"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#444444"
+            android:text="李**士"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="2dp"
+            android:text="2017-09-09 12：12：12"
+            android:textColor="#999999"
+            android:textSize="10sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginRight="13dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:textSize="18sp"
+        android:text="￥12050.00"
+        android:textColor="#249EF5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+</RelativeLayout>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/mIvPic"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="14dp"
+        android:layout_marginRight="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_food" />
+
+
+    <TextView
+        android:id="@+id/mTvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_toLeftOf="@+id/mIvPic"
+        android:layout_toStartOf="@+id/mIvPic"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingEnd="14dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingStart="14dp"
+        android:text="标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题标题"
+        android:textColor="@color/color333"
+        android:textSize="15sp" />
+
+
+    <LinearLayout
+        android:id="@+id/mLayoutRead"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="12dp"
+        android:layout_toLeftOf="@+id/mIvPic"
+        android:layout_toStartOf="@+id/mIvPic"
+        android:orientation="horizontal"
+        android:paddingEnd="14dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingStart="14dp">
+
+        <TextView
+            android:id="@+id/mTvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="11月20日"
+            android:textColor="@color/coloraaa"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/mTvRead"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:drawableLeft="@drawable/img_see_list"
+            android:drawablePadding="4dp"
+            android:drawableStart="@drawable/img_see_list"
+            android:gravity="center_vertical"
+            android:text="300"
+            android:textColor="@color/coloraaa"
+            android:textSize="10sp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/mTvContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/mLayoutRead"
+        android:layout_below="@+id/mTvTitle"
+        android:layout_marginTop="10dp"
+        android:layout_toLeftOf="@+id/mIvPic"
+        android:layout_toStartOf="@+id/mIvPic"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:paddingEnd="14dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingStart="14dp"
+        android:text="内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容"
+        android:textColor="@color/color999"
+        android:textSize="12sp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorf7" />
+
+</RelativeLayout>

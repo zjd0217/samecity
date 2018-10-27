@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.group.goodsdetail.evaluate.AllEvaluateActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/all_evaluate_title"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <ImageView
+            android:id="@+id/all_evaluate_title_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:clickable="true"
+            android:src="@drawable/back_icon"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="全部评价"
+            android:textColor="@color/color444"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/all_evaluate_title_share"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:clickable="true"
+            android:src="@drawable/share"
+            app:layout_constraintBottom_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="parent" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--评价的标签-->
+    <com.zhy.view.flowlayout.TagFlowLayout
+        android:id="@+id/all_evaluate_flow_layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingLeft="12.5dp"
+        android:paddingRight="12.5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/all_evaluate_title" />
+
+    <!--中间评论的内容-->
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/all_evaluate_swipeRefreshLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/all_evaluate_footer"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/all_evaluate_flow_layout">
+
+        <com.scwang.smartrefresh.layout.header.ClassicsHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="FixedBehind" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/all_evaluate_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srlClassicsSpinnerStyle="FixedBehind" />
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <!--底部收藏、客服、单独购买和拼团购买-->
+    <LinearLayout
+        android:id="@+id/all_evaluate_footer"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!--收藏-->
+        <LinearLayout
+            android:id="@+id/all_evaluate_collection"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/all_evaluate_collection_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bottom_collection" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="收藏"
+                android:textColor="@color/color444"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+        <!--客服-->
+        <LinearLayout
+            android:id="@+id/all_evaluate_customer"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shop_customer_service" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="客服"
+                android:textColor="@color/color444"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+        <!--单独购买-->
+        <TextView
+            android:id="@+id/all_evaluate_alone_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffcab2"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="¥29.9\n单独购买"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <!--拼团购买-->
+        <TextView
+            android:id="@+id/all_evaluate_collage_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorff5"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="¥19.9元\n发起3人拼单"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

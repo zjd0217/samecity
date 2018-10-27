@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.group.goodsdetail.GroupGoodsDetailActivity">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/group_detail_scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--轮播图-->
+            <com.youth.banner.Banner
+                android:id="@+id/group_detail_banner"
+                android:layout_width="match_parent"
+                android:layout_height="480dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="12.5dp"
+                android:paddingRight="12.5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_toLeftOf="@+id/group_detail_sum_num_num_people"
+                    android:paddingRight="10dp">
+
+                    <!--拼团价格-->
+                    <TextView
+                        android:id="@+id/group_detail_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="¥188"
+                        android:textColor="@color/colorff5"
+                        android:textSize="18sp" />
+                    <!--原本价格-->
+                    <TextView
+                        android:id="@+id/group_detail_base_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="¥208"
+                        android:textColor="@color/color999"
+                        android:textSize="10sp" />
+                    <!--会员价格-->
+                    <TextView
+                        android:id="@+id/group_detail_vip_price"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="会员价150"
+                        android:textColor="@color/colorff5"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/group_detail_sum_num_num_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true">
+                    <!--已拼件数-->
+                    <TextView
+                        android:id="@+id/group_detail_sum_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="已拼3000件"
+                        android:textColor="@color/color999"
+                        android:textSize="10sp" />
+                    <!--当前拼单人数-->
+                    <TextView
+                        android:id="@+id/group_detail_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="10dp"
+                        android:text="5人"
+                        android:textColor="@color/colorff5"
+                        android:textSize="10sp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="拼单"
+                        android:textColor="@color/color999"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--商品描述-->
+            <TextView
+                android:id="@+id/group_detail_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.5dp"
+                android:layout_marginRight="12.5dp"
+                android:layout_marginTop="10dp"
+                android:text="COLOPLAST马克笔大礼包 单头马克笔马克笔第一代——设计界的翘楚"
+                android:textColor="@color/color222"
+                android:textSize="15sp" />
+
+            <!--优惠-->
+            <RelativeLayout
+                android:id="@+id/group_detail_discount_view"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:clickable="true"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:id="@+id/group_detail_discount"
+                    android:layout_width="330dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="满30减3  5元无门槛"
+                    android:textColor="@color/color222"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_next" />
+
+            </RelativeLayout>
+
+            <!--商品标签-->
+            <RelativeLayout
+                android:id="@+id/group_detail_label_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:paddingRight="12dp">
+
+                <!--商品标签-->
+                <LinearLayout
+                    android:id="@+id/group_detail_label"
+                    android:layout_width="340dp"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/icon_next" />
+
+            </RelativeLayout>
+
+            <!--拼单标题-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <!--拼单人数-->
+                <TextView
+                    android:id="@+id/group_detail_num_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="16人"
+                    android:textColor="@color/colorff5"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/group_detail_num_people"
+                    android:text="正在拼单,可直接参与"
+                    android:textColor="@color/color222"
+                    android:textSize="15sp" />
+                <!--查看更多拼单人数-->
+                <LinearLayout
+                    android:id="@+id/group_detail_look_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="查看更多"
+                        android:textColor="@color/color999"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/icon_next" />
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!--拼单列表-->
+            <LinearLayout
+                android:id="@+id/group_detail_collage_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!--商品评价-->
+            <RelativeLayout
+                android:id="@+id/group_detail_evaluate_shop"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:id="@+id/group_detail_evaluate_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="商品评价（60）"
+                    android:textColor="@color/color444"
+                    android:textSize="15sp" />
+                <!--查看更多评价人数-->
+                <LinearLayout
+                    android:id="@+id/group_detail_evaluate_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:clickable="true">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:text="查看更多"
+                        android:textColor="@color/colorff5"
+                        android:textSize="12sp" />
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="3dp"
+                        android:src="@drawable/icon_next_orange" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <!--评价标签-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingLeft="12dp">
+
+                <TextView
+                    android:id="@+id/group_detail_evaluate_good"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:background="@drawable/shape_evaluate"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="五星好评（900)"
+                    android:textColor="#FF555555" />
+
+                <TextView
+                    android:id="@+id/group_detail_evaluate_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_evaluate"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="五星好评（900)"
+                    android:textColor="#FF555555" />
+
+                <TextView
+                    android:id="@+id/group_detail_evaluate_bad"
+                    android:layout_width="wrap_content"
+                    android:layout_height="32dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shape_evaluate"
+                    android:gravity="center"
+                    android:padding="8dp"
+                    android:text="五星好评（900)"
+                    android:textColor="#FF555555" />
+
+            </LinearLayout>
+
+            <!--评价内容-->
+            <LinearLayout
+                android:id="@+id/group_detail_evaluate_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!--店铺详情-->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <!--店铺图片-->
+                <ImageView
+                    android:id="@+id/group_detail_shop_img"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerVertical="true" />
+
+                <!--店铺内容-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_toLeftOf="@+id/group_detail_in_shop"
+                    android:layout_toRightOf="@+id/group_detail_shop_img"
+                    android:orientation="vertical">
+
+                    <!--店铺名字-->
+                    <TextView
+                        android:id="@+id/group_detail_shop_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:text="马克笔之家"
+                        android:textColor="@color/color222"
+                        android:textSize="15sp" />
+
+                    <!--商品数量和已拼数量-->
+                    <TextView
+                        android:id="@+id/group_detail_shop_num"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:maxLines="1"
+                        android:text="商品数量：300               "
+                        android:textColor="@color/color888"
+                        android:textSize="11sp" />
+
+                    <!--营业时间-->
+                    <TextView
+                        android:id="@+id/group_detail_shop_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="营业时间：9：00-21：00               "
+                        android:textColor="@color/colorff5"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <!--进店逛逛-->
+                <LinearLayout
+                    android:id="@+id/group_detail_in_shop"
+                    android:layout_width="99.5dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/shape_color_ff5"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img_store" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:text="进店逛逛"
+                        android:textColor="@color/colorff5"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <!--店铺地址-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true">
+
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:src="@drawable/location" />
+
+                    <TextView
+                        android:id="@+id/group_detail_shop_address"
+                        android:layout_width="132.5dp"
+                        android:layout_height="16.5dp"
+                        android:text="温州市鹿城区白马街16号"
+                        android:textColor="@color/color888"
+                        android:textSize="12sp" />
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:gravity="center_vertical">
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="30dp"
+                        android:background="#eee" />
+
+                    <ImageView
+                        android:id="@+id/group_detail_shop_phone"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginLeft="12.5dp"
+                        android:src="@drawable/icon_phone" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"
+                android:text="商品推荐"
+                android:textColor="@color/color444"
+                android:textSize="15sp" />
+
+            <!--推荐商品-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/group_detail_recommend_list"
+                android:layout_width="match_parent"
+                android:layout_height="197dp" />
+
+            <LinearLayout
+                android:id="@+id/group_detail_goods_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:gravity="center"
+                    android:text="商品详情"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:text="价格说明"
+                android:textColor="@color/color444"
+                android:textSize="15sp" />
+            <!--价格说明内容-->
+            <TextView
+                android:id="@+id/group_detail_price_expalin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="9dp"
+                android:text="价格说明价格"
+                android:textColor="@color/color999"
+                android:textSize="12sp" />
+
+
+            <LinearLayout
+                android:id="@+id/group_detail_love"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="15dp"
+                android:gravity="center">
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorff5" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="11dp"
+                    android:text="猜你喜欢"
+                    android:textColor="@color/colorff5"
+                    android:textSize="15sp" />
+
+                <View
+                    android:layout_width="40dp"
+                    android:layout_height="1dp"
+                    android:background="@color/colorff5" />
+
+            </LinearLayout>
+
+            <!--猜你喜欢的商品列表-->
+            <com.wxkj.tongcheng.view.MyGridView
+                android:id="@+id/group_detail_love_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:horizontalSpacing="5dp"
+                android:numColumns="2"
+                android:verticalSpacing="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="50dp" />
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <!--底部收藏、客服、单独购买和拼团购买-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <!--收藏-->
+        <LinearLayout
+            android:id="@+id/group_detail_collection"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/group_detail_collection_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/bottom_collection" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="收藏"
+                android:textColor="@color/color444"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+        <!--客服-->
+        <LinearLayout
+            android:id="@+id/group_detail_customer"
+            android:layout_width="55dp"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shop_customer_service" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:text="客服"
+                android:textColor="@color/color444"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+        <!--单独购买-->
+        <TextView
+            android:id="@+id/group_detail_alone_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#ffcab2"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="¥29.9\n单独购买"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+        <!--拼团购买-->
+        <TextView
+            android:id="@+id/group_detail_collage_buy"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/colorff5"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="¥19.9元\n发起3人拼单"
+            android:textColor="@color/white"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:id="@+id/group_detail_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!--标题1-->
+            <RelativeLayout
+                android:id="@+id/group_detail_title1"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:paddingLeft="12.5dp"
+                android:paddingRight="12.5dp">
+
+
+                <ImageView
+                    android:id="@+id/group_detail_back1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:src="@drawable/scan_back" />
+
+                <ImageView
+                    android:id="@+id/group_detail_share1"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/commodity_share" />
+
+            </RelativeLayout>
+
+            <!--标题2-->
+            <RelativeLayout
+                android:id="@+id/group_detail_title2"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:background="@drawable/shape_ff5_to_ff9"
+                android:visibility="invisible">
+
+                <ImageView
+                    android:id="@+id/group_detail_back2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="15dp"
+                    android:src="@drawable/back_white" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="商品详情"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/group_detail_share2"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/share_wihte" />
+            </RelativeLayout>
+
+            <!--标题3-->
+            <LinearLayout
+                android:id="@+id/group_detail_title3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:visibility="invisible">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:visibility="visible">
+
+                    <ImageView
+                        android:id="@+id/group_detail_back3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="15dp"
+                        android:src="@drawable/back_icon" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="详情"
+                        android:textColor="@color/color444"
+                        android:textSize="18sp" />
+
+                    <ImageView
+                        android:id="@+id/group_detail_more"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/share" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+        <!--标题3显示的时候，显示的东西-->
+        <LinearLayout
+            android:id="@+id/group_detail_title3_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/white"
+            android:visibility="invisible"
+            android:weightSum="4">
+            <!--宝贝-->
+            <TextView
+                android:id="@+id/group_detail_baby"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="宝贝"
+                android:textColor="@color/color444"
+                android:textSize="14sp" />
+
+            <!--评价-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/group_detail_evaluate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/icon_city"
+                    android:text="评价"
+                    android:textColor="@color/colorff5"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!--详情-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/group_detail_details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="详情"
+                    android:textColor="@color/color444"
+                    android:textSize="14sp" />
+            </LinearLayout>
+            <!--推荐-->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingLeft="20dp">
+
+                <TextView
+                    android:id="@+id/group_detail_recommend"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="推荐"
+                    android:textColor="@color/color444"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

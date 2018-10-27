@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/ff5_4dp_bg" android:state_selected="true" />
+    <item android:drawable="@drawable/f7_4dp_bg" />
+
+</selector>

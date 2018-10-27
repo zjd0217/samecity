@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:id="@+id/mScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:overScrollMode="never"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/hot_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:visibility="gone"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="热门搜索词汇"
+                    android:textColor="@color/color333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/hot" />
+            </LinearLayout>
+
+            <com.wxkj.tongcheng.view.flowlayout.TagFlowLayout
+                android:id="@+id/hot_search_layout"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                app:max_select="-1" />
+
+            <LinearLayout
+                android:id="@+id/history_layout"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="12dp"
+                android:paddingRight="12dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="历史搜索"
+                    android:textColor="@color/color333"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/delete_history_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/delete" />
+            </LinearLayout>
+
+            <com.wxkj.tongcheng.view.flowlayout.TagFlowLayout
+                android:id="@+id/history_search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:max_select="-1" />
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/mLayoutList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:background="@color/white"
+                android:weightSum="3">
+
+                <!--分类-->
+                <LinearLayout
+                    android:id="@+id/mLayoutClassify"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/mTvClassify"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="分类"
+                        android:textColor="@color/colorff5"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/mIvClassifyIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/orange_next" />
+
+                </LinearLayout>
+
+
+                <!--综合排序-->
+                <LinearLayout
+                    android:id="@+id/mLayoutSort"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/mTvSort"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="综合排序"
+                        android:textColor="@color/colorf44"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/mIvSortIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp" />
+
+                </LinearLayout>
+
+                <!--筛选-->
+                <LinearLayout
+                    android:id="@+id/mLayoutScreen"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/mTvScreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="筛选"
+                        android:textColor="@color/colorf44"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/mIvScreenIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:src="@drawable/screen" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <com.scwang.smartrefresh.layout.SmartRefreshLayout
+                android:id="@+id/mSmartRefreshLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:srlAccentColor="#fff"
+                app:srlEnablePreviewInEditMode="false"
+                app:srlFixedHeaderViewId="@+id/profile"
+                app:srlPrimaryColor="#444">
+
+                <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srlClassicsSpinnerStyle="FixedBehind" />
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/mRecyclerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:overScrollMode="never" />
+
+                <com.scwang.smartrefresh.layout.footer.ClassicsFooter
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:srlClassicsSpinnerStyle="FixedBehind" />
+            </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/mIvTop"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_gravity="right|bottom|end"
+            android:layout_marginBottom="14dp"
+            android:layout_marginRight="14dp"
+            android:src="@drawable/top" />
+
+    </FrameLayout>
+
+</FrameLayout>

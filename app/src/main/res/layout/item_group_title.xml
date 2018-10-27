@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.youth.banner.Banner
+                android:id="@+id/group_banner"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@color/blue" />
+
+            <LinearLayout
+                android:id="@+id/group_title_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--头部-->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="44dp"
+                    android:background="@drawable/background_gradient_black">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="拼团"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+
+                    <ImageView
+                        android:id="@+id/group_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="15dp"
+                        android:src="@drawable/news_white" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <!--输入框-->
+
+            <LinearLayout
+                android:id="@+id/group_input"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@+id/group_title_view"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/search_bg"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/search_gray" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="2dp"
+                    android:background="@null"
+                    android:gravity="center_vertical"
+                    android:text="搜索同城"
+                    android:textColor="@color/color999"
+                    android:textSize="15sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <!--二人拼团和多人拼团-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:weightSum="2">
+
+            <!--二人拼团-->
+
+            <LinearLayout
+                android:id="@+id/group_two"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_two_people" />
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="二人拼团"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <!--多人拼团-->
+
+            <LinearLayout
+                android:id="@+id/group_more"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_more_people" />
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="多人拼团"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!--拼商品和拼服务-->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:weightSum="2">
+
+            <!--拼商品-->
+
+            <LinearLayout
+                android:id="@+id/group_goods"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_commodity" />
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="拼商品"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <!--拼服务-->
+
+            <LinearLayout
+                android:id="@+id/group_service"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_service" />
+
+                <TextView
+                    android:layout_width="75dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="拼服务"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#eee" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/group_recyclerView_classification"
+            android:layout_width="match_parent"
+            android:layout_height="180dp" />
+
+        <com.move.widget.XIndicator
+            android:id="@+id/group_indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            app:count="2"
+            app:index="1"
+            app:indicatorColor="#f7f7f7"
+            app:indicatorHeight="1.5dp"
+            app:indicatorSpace="6dp"
+            app:indicatorWidth="38dp"
+            app:selectedIndicatorColor="#ff5000"
+            app:selectedIndicatorHeight="1.5dp"
+            app:selectedIndicatorWidth="38dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@color/colorf7" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#eee" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:gravity="center"
+            android:text="超值热卖"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

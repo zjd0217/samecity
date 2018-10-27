@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_price_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12.5dp"
+        android:text="提示：报价商家可多次报价，新报价将覆盖旧报价"
+        android:textColor="#BABABA"
+        android:textSize="12sp" />
+
+    <RelativeLayout
+        android:id="@+id/rl_price"
+        android:layout_width="200dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/tv_price_hint"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape_bule_round">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="提交新的报价"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/countdown_hint"
+        android:layout_marginTop="25dp"
+        android:text="离招标结束时间"
+        android:textSize="15sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rl_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#444444" />
+
+    <TextView
+        android:id="@+id/countdown_time"
+        android:layout_marginTop="5dp"
+        android:text="离招标结束时间"
+        android:textSize="18sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/countdown_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#249EF5" />
+    <TextView
+        android:id="@+id/countdown_hint_down"
+        android:layout_marginTop="5dp"
+        android:text="报价商家可多次报价，新报价将覆盖旧报价"
+        android:textSize="12sp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/countdown_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#BBBBBB" />
+</RelativeLayout>

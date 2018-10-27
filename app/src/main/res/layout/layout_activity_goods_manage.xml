@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout
+    android:background="#249EF5"
+    android:layout_width="match_parent"
+    android:layout_height="44dp">
+    <ImageView
+        android:layout_marginLeft="15dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/back_white"
+        android:layout_width="25dp"
+        android:layout_height="25dp" />
+    <TextView
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="商品管理"
+        android:textColor="#FFFFFFFF"
+        android:textSize="18sp"
+        />
+    <ImageView
+        android:src="@drawable/tongcheng_add_orange"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_centerVertical="true"
+        android:layout_width="20dp"
+        android:layout_height="20dp" />
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:background="@drawable/shape_search_goods_manage"
+            android:layout_marginTop="7.5dp"
+            android:layout_marginBottom="7.5dp"
+            android:layout_centerInParent="true"
+            android:layout_width="345dp"
+            android:layout_height="30dp">
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="搜索"
+                android:textColor="#FFB8B8B8"
+                android:textSize="12sp"
+                />
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <com.flyco.tablayout.SlidingTabLayout
+        android:id="@+id/tab_layout"
+        android:background="#ffffff"
+        app:tl_textUnselectColor="@android:color/darker_gray"
+        app:tl_textSelectColor="@android:color/black"
+        app:tl_indicator_color="#e6ffea00"
+        app:tl_tab_space_equal="true"
+        app:tl_indicator_width="15dp"
+        app:tl_indicator_margin_top="0dp"
+        app:tl_textsize="14sp"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"/>
+    <android.support.v4.view.ViewPager
+        android:layout_marginTop="6dp"
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

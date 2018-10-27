@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:paddingRight="12.5dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="21dp"
+        android:layout_marginTop="13.5dp">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:src="@drawable/authentication" />
+
+        <TextView
+            android:id="@+id/item_service_dialog_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15dp"
+            android:text="企业认证"
+            android:textColor="@color/color222"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/item_service_dialog_detail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="6dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="若收到的商品是假冒品牌，可获得加倍赔偿"
+        android:textColor="@color/colorf9c"
+        android:textSize="12sp" />
+
+</LinearLayout>

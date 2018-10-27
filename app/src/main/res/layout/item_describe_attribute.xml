@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingEnd="14dp"
+    android:paddingLeft="14dp"
+    android:paddingRight="14dp"
+    android:paddingStart="14dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="动态属性"
+            android:id="@+id/mTvAttributes"
+            android:textColor="@color/color666"
+            android:textSize="15sp" />
+
+        <EditText
+            android:id="@+id/mEtAttributes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:drawableEnd="@drawable/icon_next"
+            android:drawablePadding="10dp"
+            android:drawableRight="@drawable/icon_next"
+            android:gravity="center_vertical"
+            android:hint="输入属性"
+            android:inputType="text"
+            android:paddingLeft="20dp"
+            android:paddingStart="20dp"
+            android:singleLine="true"
+            android:textColor="@color/color000"
+            android:textColorHint="@color/colorccc"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorf9" />
+
+</LinearLayout>

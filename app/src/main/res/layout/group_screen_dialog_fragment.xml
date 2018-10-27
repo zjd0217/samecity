@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/screen_out"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:layout_marginTop="23dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@color/colorf4"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:text="筛选"
+            android:textColor="#FFB1B1B1"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="选择类型"
+            android:textColor="@color/color666"
+            android:textSize="12sp" />
+
+        <!--选择的类型-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/screen_need"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/f7_4dp_bg"
+                android:gravity="center"
+                android:text="需求"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/screen_goods"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/f7_4dp_bg"
+                android:gravity="center"
+                android:text="商品"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/screen_service"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/f7_4dp_bg"
+                android:gravity="center"
+                android:text="服务"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="10dp"
+            android:text="拼团人数"
+            android:textColor="@color/color666"
+            android:textSize="12sp" />
+
+        <!--拼团人数-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:id="@+id/screen_two"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/f7_4dp_bg"
+                android:gravity="center"
+                android:text="二人"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/screen_three"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/f7_4dp_bg"
+                android:gravity="center"
+                android:text="三人"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/screen_five"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/f7_4dp_bg"
+                android:gravity="center"
+                android:text="五人"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/screen_eight"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/f7_4dp_bg"
+                android:gravity="center"
+                android:text="八人"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/screen_ten"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/f7_4dp_bg"
+                android:gravity="center"
+                android:text="十人"
+                android:textColor="@color/color333"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/f7_4dp_bg"
+                android:gravity="center"
+                android:textColor="@color/color333"
+                android:textSize="12sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+        <!--重置和完成-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginRight="12dp"
+            android:layout_weight="0"
+            android:gravity="center_vertical|right">
+
+            <TextView
+                android:id="@+id/screen_reset_text"
+                android:layout_width="93dp"
+                android:layout_height="38dp"
+                android:background="@drawable/reset_bg"
+                android:gravity="center"
+                android:text="重置"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/screen_finish_text"
+                android:layout_width="93dp"
+                android:layout_height="38dp"
+                android:background="@drawable/screen_finish_bg"
+                android:gravity="center"
+                android:text="完成"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

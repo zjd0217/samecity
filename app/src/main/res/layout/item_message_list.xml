@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="1dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/mIvPic"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/icon_food" />
+
+    <RelativeLayout
+        android:id="@+id/mLayoutNickname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/mIvPic"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/mIvPic"
+        android:layout_toRightOf="@+id/mIvPic"
+        android:paddingEnd="14dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingStart="14dp">
+
+        <TextView
+            android:id="@+id/mTvNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:singleLine="true"
+            android:text="官方客服"
+            android:textColor="@color/color333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/mTvType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/mTvNickname"
+            android:layout_toRightOf="@+id/mTvNickname"
+            android:background="@drawable/shape_message_type_bg"
+            android:paddingBottom="1dp"
+            android:paddingEnd="2dp"
+            android:paddingLeft="2dp"
+            android:paddingRight="2dp"
+            android:paddingStart="2dp"
+            android:paddingTop="1dp"
+            android:singleLine="true"
+            android:text="官方"
+            android:textColor="@color/white"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/mTvTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:singleLine="true"
+            android:text="下午2:33"
+            android:textColor="@color/color999"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/mTvMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mLayoutNickname"
+        android:layout_marginTop="4dp"
+        android:layout_toEndOf="@+id/mIvPic"
+        android:layout_toRightOf="@+id/mIvPic"
+        android:paddingEnd="14dp"
+        android:paddingLeft="14dp"
+        android:paddingRight="14dp"
+        android:paddingStart="14dp"
+        android:singleLine="true"
+        android:text="嗯嗯您好很高兴认识您"
+        android:textColor="@color/color999"
+        android:textSize="14sp" />
+
+</RelativeLayout>

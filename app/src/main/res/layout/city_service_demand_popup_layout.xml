@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="91dp"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorf7"/>
+    <TextView
+        android:id="@+id/service_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="服务"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/color333"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/colorf7"/>
+    <TextView
+        android:id="@+id/demand_text"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="需求"
+        android:textSize="15sp"
+        android:gravity="center"
+        android:textColor="@color/color333"/>
+</LinearLayout>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_below="@+id/rl_time"
+    android:paddingBottom="10dp"
+    android:paddingTop="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_des_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="描述"
+        android:textColor="#666666"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_des"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_des_hint"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:text="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+        android:textColor="#666666"
+        android:textSize="13sp" />
+    <android.support.v7.widget.RecyclerView
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="10dp"
+        android:id="@+id/recycler_des"
+        android:layout_below="@id/tv_des"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>
+</RelativeLayout>
